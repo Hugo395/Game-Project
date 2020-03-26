@@ -1,0 +1,183 @@
+:root{
+    background-color: black;
+    font-size: 62.5%;
+}
+
+#image{
+width: 70%;
+height: 50%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    margin : 0;
+    padding: 0;
+    color: crimson;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: royalblue;
+    margin-bottom: 5rem;
+    }
+
+h1 > span {
+    font-size : 2.4rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+h4{
+    margin-bottom: 1rem;
+}
+
+/* Utilities */
+
+.container{
+    width : 100vw;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction : column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/*Buttons */
+
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid cornsilk;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color:whitesmoke;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(78, 19, 19, 0.5);
+    transform: translateY(-0.5rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none,
+}
+
+
+/*Game - 2º page - Styling*/
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.7rem;
+    width: 70%;
+    font-size: 1.0rem;
+    border: 0.2rem solid rgba(78, 19, 19, 0.5);
+    background: white;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(78, 19, 19, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+
+}
+
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: tomato;
+    color: white;
+    }
+   
+ .choice-text{
+    padding: 1.5rem;
+    width: 100%;
+    color: rgb(14, 14, 3);
+    font-weight: bold;
+    }
+
+    .correct{
+        background-color: #28a745;
+    }
+
+    .incorrect{
+        background-color: #dc3545;
+    }
+
+    /*Mini Board*/
+
+    #board {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .board-prefix {
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+    .board-main-text {
+        text-align: center;
+    }
+
+    /*Progress Bar */
+
+    #Bar{
+        width: 20rem;
+        height: 4rem;
+        border: 0.3rem solid whitesmoke;
+        margin-top: 1.5rem;
+    }
+
+    #progressBarFull{
+        height: 3.4rem;
+        background-color: whitesmoke;
+        width: 0%;
+    }
